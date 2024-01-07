@@ -9,3 +9,9 @@ jobs:
     steps:
     - name: Checkout
       uses: action/checkout@v1
+  
+    - name: Use Node.js
+      user: actions/setup-node@v2
+      with:
+        node-version: '16'
+        check-latest: true
