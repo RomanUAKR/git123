@@ -1,1 +1,11 @@
-name: Stating pipleline
+name: Staging pipleline
+on:
+  push:
+    branches:
+    - staging
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: action/checkout@v1
